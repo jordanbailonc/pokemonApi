@@ -1,22 +1,20 @@
 <ion-tabs>
-  <ion-router-outlet></ion-router-outlet>
-
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
+    <ion-tab-button tab="home" href="/tabs/(home:home)">
       <ion-icon name="home-outline"></ion-icon>
       Home
     </ion-tab-button>
-    <ion-tab-button tab="abitity">
+    <ion-tab-button tab="abitity" href="/tabs/(ability:ability)">
       <ion-icon name="heart-half-outline"></ion-icon>
       Habilities
     </ion-tab-button>
-    <ion-tab-button tab="egg-group">
+    <ion-tab-button tab="egg-group" href="/tabs/(egg-group:egg-group)">
       <ion-icon name="male-female-outline"></ion-icon>
       Eggs
     </ion-tab-button>
-    <ion-tab-button tab="egg-group">
+    <ion-tab-button (click)="settingPopEver($event)">
       <ion-icon name="apps-outline"></ion-icon>
-      More +
+      More
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>

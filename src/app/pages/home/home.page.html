@@ -1,40 +1,40 @@
 <ion-content [fullscreen]="true">
-<div class="title d-inline-flex justify-content-center">
-  <img src="./../../assets/pokemon.jpeg" alt="The Poekemon Logo">
-</div>
-<div class="mid">
+  <div class="title d-inline-flex justify-content-center">
+    <a href="http://pokemon.com/es"><img src="./../../assets/pokemon.jpeg" alt="The Poekemon Logo"></a>
+  </div>
+  <div class="mid">
 
-  <div class="row">
-    <p class="logo col d-inline-flex justify-content-center">Go catch'em all</p>
+    <div class="row">
+      <p class="logo col d-inline-flex justify-content-center" (click)="logInfo()">Go catch'em all</p>
+    </div>
+    <div class="row">
+      <button class="col" routerLink="/tabs/ability" (click)="logInfo()">ability</button>
+      <button class="col">characteristic</button>
+      <button class="col">egg-group</button>
+    </div>
+    <div class="row">
+      <button class="col">generation</button>
+      <button class="col">item-category</button>
+      <button class="col">item-pocket</button>
+    </div>
+    <div class="row">
+      <button class="col">location</button>
+      <button class="col">machine</button>
+      <button class="col">move</button>
+    </div>
+    <div class="row">
+      <button class="col">nature</button>
+      <button class="col">pokedex</button>
+      <button class="col">pokemon</button>
+    </div>
+    <div class="row">
+      <button class="col">region</button>
+      <button class="col">stat</button>
+      <button class="col">type</button>
+    </div>
   </div>
-  <div class="row">
-    <button class="col">ability</button>
-    <button class="col">characteristic</button>
-    <button class="col">egg-group</button>
-  </div>
-  <div class="row">
-    <button class="col">generation</button>
-    <button class="col">item-category</button>
-    <button class="col">item-pocket</button>
-  </div>
-  <div class="row">
-    <button class="col">location</button>
-    <button class="col">machine</button>
-    <button class="col">move</button>
-  </div>
-  <div class="row">
-    <button class="col">nature</button>
-    <button class="col">pokedex</button>
-    <button class="col">pokemon</button>
-  </div>
-  <div class="row">
-    <button class="col">region</button>
-    <button class="col">stat</button>
-    <button class="col">type</button>
-  </div>
-</div>
 
-<p>{{this.categoriesList['__zone_symbol__value']['ability']}}</p>
+  <!-- <p>{{this.categoriesList['__zone_symbol__value']['ability']}}</p>
 <p>{{this.categoriesList['__zone_symbol__value']['characteristic']}}</p>
 <p>{{this.categoriesList['__zone_symbol__value']['egg-group']}}</p>
 <p>{{this.categoriesList['__zone_symbol__value']['item-category']}}</p>
@@ -47,6 +47,6 @@
 <p>{{this.categoriesList['__zone_symbol__value']['pokemon']}}</p>
 <p>{{this.categoriesList['__zone_symbol__value']['region']}}</p>
 <p>{{this.categoriesList['__zone_symbol__value']['stat']}}</p>
-<p>{{this.categoriesList['__zone_symbol__value']['type']}}</p>
+<p>{{this.categoriesList['__zone_symbol__value']['type']}}</p> -->
 
 </ion-content>

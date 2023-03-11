@@ -15,19 +15,19 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
+        loadChildren: () => import('./../pages/home/home.module').then(m => m.HomePageModule)
       },
       {
-        path: 'abitity',
-        loadChildren: () => import('../pages/abilities/abilities.module').then(m => m.AbilitiesPageModule)
+        path: 'ability',
+        loadChildren: () => import('./../pages/abilities/abilities.module').then(m => m.AbilitiesPageModule)
       },
       {
         path: 'characteristic',
-        loadChildren: () => import('../pages/characteristic/characteristic.module').then( m => m.CharacteristicPageModule)
+        loadChildren: () => import('./../pages/characteristic/characteristic.module').then( m => m.CharacteristicPageModule)
       },
       {
         path: 'egg-group',
-        loadChildren: () => import('../pages/egg-group/egg-group.module').then( m => m.EggGroupPageModule)
+        loadChildren: () => import('./../pages/egg-group/egg-group.module').then( m => m.EggGroupPageModule)
       }
     ]
   }

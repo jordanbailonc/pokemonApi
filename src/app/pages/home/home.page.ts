@@ -21,4 +21,9 @@ export class HomePage  implements OnInit{
     
   }
 
+  logInfo(){
+    console.log('info');
+    
+  }
+
 }

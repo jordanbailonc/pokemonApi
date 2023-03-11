@@ -11,5 +11,7 @@ export class AbilitiesPage implements OnInit {
 
   ngOnInit() {
   }
-
+  inform(){
+    console.log('info');
+  }
 }
