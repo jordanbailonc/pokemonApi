@@ -11,5 +11,41 @@
 .logo{
   color: #FFCC00;
   font-size:2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.logo:hover{
+  color: #FB1B1B;
+}
+
+.mid{
+  padding: 1.25rem 1rem 1.25rem ;
+}
+
+.btn-categories{
+  padding: 1rem 0.33rem 1rem;
+  gap: 5px;
+  & button{
+    border: solid 1px black;
+  }
+  & button:hover{
+    background-color: #0A285F;
+    color: white;
+  }
+}
+
+.foot{
+  padding: 1.25rem 1rem 1.25rem;
+  background-color: #FFCC00;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.foot:hover{
+  background-color: #FB1B1B;
+}
+
+.icon{
+  color: black;
+}

@@ -10,6 +10,10 @@ const routes: Routes = [
     path: '',
     redirectTo: 'tabs/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'error-page',
+    loadChildren: () => import('./pages/error/error.module').then( m => m.ErrorPageModule)
   }
 
 

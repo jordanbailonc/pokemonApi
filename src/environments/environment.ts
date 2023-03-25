@@ -2,9 +2,26 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { group } from "console";
+
 export const environment = {
   production: false,
-  main_url:'https://pokeapi.co/api/v2'
+  main_url:'https://pokeapi.co/api/v2',
+  ability:'',
+  characteristic:'',
+  egg_group:'',
+  generation:'',
+  item_category:'',
+  item_pocket:'',
+  location:'',
+  machine:'',
+  move:'',
+  nature:'',
+  pokedex:'',
+  pokemon:'',
+  region:'',
+  stat:'',
+  type:'',
 };
 
 /*
