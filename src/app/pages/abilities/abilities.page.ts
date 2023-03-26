@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AbilityService } from 'src/app/services/ability.service';
 
 @Component({
   selector: 'app-abilities',
@@ -7,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AbilitiesPage implements OnInit {
 
-  constructor() { }
+  data:any;
 
-  ngOnInit() {
+  constructor(
+    private abilitiesService: AbilityService
+  ) { }
+
+  async ngOnInit() {
+    this.data = await this.abilitiesService.getAllHabilities();
+    if(this.data===null){
+      console.log('fails');
+    }else{
+      console.log(this.data);
+    }
   }
+
   inform(){
     console.log('info');
   }
