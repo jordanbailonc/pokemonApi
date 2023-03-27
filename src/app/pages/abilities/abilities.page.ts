@@ -9,6 +9,7 @@ import { AbilityService } from 'src/app/services/ability.service';
 export class AbilitiesPage implements OnInit {
 
   data:any;
+  ability: any;
 
   constructor(
     private abilitiesService: AbilityService
@@ -21,9 +22,5 @@ export class AbilitiesPage implements OnInit {
     }else{
       console.log(this.data);
     }
-  }
-
-  inform(){
-    console.log('info');
   }
 }

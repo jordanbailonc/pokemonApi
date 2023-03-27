@@ -1,9 +1,21 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>abilities</ion-title>
+  <ion-toolbar mode="md">
+    <ion-buttons slot="start">
+      <ion-back-button text="" mode="ios" class="back-btn"></ion-back-button>
+    </ion-buttons>
+    <ion-title>List of abilities</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<p (click)="inform()">AHAHAHAHAHAHAHAHA</p>
+  <ion-list *ngIf="this.data!==null" class="list">
+    <ion-item *ngFor="let ab of this.data.results" class="item" >
+      {{ab.name}}
+    </ion-item>
+    <button>fsf</button><br>
+    <button>vsdvcsd</button>
+    <br><button>vsfs</button><br>
+    <button>fsfa</button>
+    <!--TODO DISPLAY CONTENT IN MID-->
+  </ion-list>
 </ion-content>

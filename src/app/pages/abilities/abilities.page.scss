@@ -1,0 +1,27 @@
+ion-toolbar{
+  --background: #0a3d8a;
+  & ion-title{
+    color: white;
+  }
+}
+
+.back-btn{
+  color: white;
+}
+
+.list{
+  display: block;
+  justify-content: center;
+  padding: 0.33rem 1rem 0.33rem;
+}
+
+ion-item:hover{
+  color: #FFCC00;
+}
+
+ion-item{
+display: flex;
+align-content: center;
+justify-content: center;
+justify-items: center;
+}
